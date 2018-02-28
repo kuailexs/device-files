@@ -213,11 +213,6 @@ SUBSYSTEM=="misc", KERNEL=="log_main", SYMLINK+="alog/main"
 
 KERNEL=="radio[0-9]*", OWNER="audio", GROUP="audio"
 
-KERNEL=="video32", MODE="0660", GROUP="audio", OWNER="system"
-KERNEL=="video33", MODE="0660", GROUP="audio", OWNER="system"
-KERNEL=="video34", MODE="0660", GROUP="audio", OWNER="system"
-KERNEL=="video35", MODE="0660", GROUP="audio", OWNER="system"
-
 KERNEL=="video32", SYMLINK+="video/venus_dec"
 KERNEL=="video33", SYMLINK+="video/venus_enc"
 KERNEL=="video34", SYMLINK+="video/q6_dec"
